@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erdenechuluun</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <header class="bg-black text-white flex items-center justify-between fixed w-full"><h1 class="m-6">ERDENECHULUUN</h1>
+    <ul class="hidden md:flex font-bold max-w-4xl">
+      <a href="#ХҮСЭЛЗОРИЛГО"><li class="m-2 p-2 hover:bg-gray-700">ХҮСЭЛ ЗОРИЛГО</li></a>
+      <a href="#МӨРӨӨДӨЛ"><li class="m-2 p-2 hover:bg-gray-700">МӨРӨӨДӨЛ</li></a>
+      <a href="#МИНИЙ ЭНД СУРАХ БОЛСОН ШАЛТГААН"><li class="m-2 p-2 hover:bg-gray-700">МИНИЙ ЭНД СУРАХ БОЛСОН ШАЛТГААН</li></a>
+      <a href="#МИНИЙ СОНNРХОЛ"><li class="m-2 p-2 hover:bg-gray-700">МИНИЙ СОНNРХОЛ</li></a>
+    </ul>
+    <ul class="pr-4 md:hidden">
+      <i class="fas fa-bars"></i>
+    </ul>
+    </header>
+    <main>
+        <div class="w-full bg-red-500 h-screen"> 
+        <p class="flex w-full h-screen justify-center items-center font-bold text-xl absolute text-pink-800">
+            Сайн байна уу?<br>
+            Миний нэрийг Эрдэнэчулуун гэдэг.Би 11 настай.
+        </p>
+         </div>
+    <div class="bg-blue-500 эучэ flex h-screen justify-center items-center" id="МӨРӨӨДӨЛ">
+        <h2 class="text-yellow-500">
+            Миний мөрөөдөл бол сайн programist болох юм.
+        <img class="w-full" src="https://th.bing.com/th/id/R.c895db405f490e3eda00969757c55e3d?rik=8dq47eQd%2fd35QQ&pid=ImgRaw&r=0" alt="">
+    </h2>   
+       
+    </div>
+    <div class="bg-indigo-700 flex h-screen justify-center items-center" id="МИНИЙ ЭНД СУРАХ БОЛСОН ШАЛТГААН">
+        <h2 class="text-r ed-500">
+            Миний мөрөөдөл бол сайн programist болох болон <br>
+            Aлдартай тоглоом бүтээсэн хүн болхийг хүсдэг. 
+               <iframe width="627" height="400" src="https://www.youtube.com/embed/eDES796-Uy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </h2>
+    </div>
+            <div class="swiper-container mySwiper" id="МИНИЙ СОНNРХОЛ">
+              <p class="text-font-4 flex justify-center font-bold hover:bg-gray-700 hover:text-white">
+                Миний сонирхол
+              </p>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bg-black w-full h-screen text-white">
+                  <p class="m-4">
+                    Bi too bodoh. <br>
+                    Minii arvan jiliin hamgiin durtai hicheel.
+                  </p>
+
+                    <img class="w-full h-2/6" src="https://cdn.dribbble.com/users/31818/screenshots/1891002/math.gif" alt="">
+                </div>
+                <div class="swiper-slide bg-black w-full h-screen text-white">
+                  bi oroondoo gantsaaraa duu sonsoh durtai
+                  <img class="w-full h-screen" src="https://64.media.tumblr.com/5faafc026fcaa52eb621a6da636e4c80/tumblr_nic0wuHZKZ1tc8rbno1_1280.gif" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>        
+    </div>
+    </main>
+</body>
+</html>
